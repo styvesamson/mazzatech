@@ -30,3 +30,25 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 ### Demo
 
 <a target="_blank" href="http://35.192.74.184/">Live Demo</a>
+
+
+### Instalação do api 
+
+- Clonar o projeto : 
+- ->  git clone https://github.com/styvesamson/mazzatech.git
+- Entrar na pasta API  
+- Em seguida, precisamos instalar as dependências do projeto usando composer
+- -> composer install
+- Configurar o arquivo .env
+- rodar os migration e seeds
+- -> php artisan migrate:refresh --seed  
+- rodar artisan serve 
+- -> php artisan serve
+
+
+### Instalação do front-end
+- Entrar na pasta web do projeto clonado  
+- Em seguida, precisamos instalar as dependências do projeto usando npm
+- -> npm install
+- Rodar o aplicativo angular 
+- -> npm start 
