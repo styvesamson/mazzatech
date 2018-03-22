@@ -32,7 +32,7 @@ Route::resource('doctor', 'DoctorController');
 /***
  * AGENDA ROUTE
  */
-Route::resource('doctor', 'AgendaController');
+Route::resource('agenda', 'AgendaController');
 
 
 

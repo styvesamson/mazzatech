@@ -13,8 +13,6 @@ import {Patient} from '../interface/patient.interface';
 })
 export class AddPatientComponent implements OnInit {
   msk_cpf = [/\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/, /\d/];
-  msk_dv = [/\d/];
-  msk_agencia = [/\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/];
   msk_birthday = [/[1-3]/, /\d/, '/', /[0-1]/, /\d/, '/', /[1-2]/, /\d/, /\d/, /\d/];
 
   msk_telefone = function(rawValue) {

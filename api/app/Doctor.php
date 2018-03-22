@@ -24,5 +24,12 @@ class Doctor extends Model
      */
     protected $guarded = ['deleted',];
 
+    /**
+     * Get the User record associated with the doctor.
+     */
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 
 }
