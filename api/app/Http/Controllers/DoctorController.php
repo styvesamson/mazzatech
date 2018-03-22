@@ -16,10 +16,7 @@ class DoctorController extends Controller
     public function index()
     {
 
-        $doctors =  Doctor::where('deleted', 0)
-            ->get();
-
-        return $doctors;
+        return  Doctor::where('deleted', 0)->get();
 
     }
 
