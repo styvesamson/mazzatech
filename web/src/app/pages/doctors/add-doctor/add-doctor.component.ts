@@ -121,7 +121,7 @@ export class AddDoctorComponent implements OnInit {
     this.currentUrl = this.activatedRoute.snapshot.params; // When component loads, grab the id
     if ( this.currentUrl.id ) {
       this.edition = true;
-      this.formTitle = 'ALTERAR PACIENTE';
+      this.formTitle = 'ALTERAR MÉDICO,';
       // Function to GET current doctor with id in params
       this.doctorService.getOne(this.currentUrl.id).subscribe(data => {
         if (!data) {
@@ -135,12 +135,12 @@ export class AddDoctorComponent implements OnInit {
            this.form.disable();
             this.edition = false;
             this.visualization = true;
-            this.formTitle = 'CONSULTA DE PACIENTE';
+            this.formTitle = 'CONSULTAR MÉDICO';
           }
         }
       });
     } else {
-      this.formTitle = 'INCLUIR PACIENTE';
+      this.formTitle = 'INCLUIR MÉDICO';
       this.loading = false; // Allow loading of blog form
       const doctor: any = {
         name: '',
