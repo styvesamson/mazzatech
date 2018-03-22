@@ -5,6 +5,6 @@ export enum AuthMethod {
 
 export const environment = {
   production: true,
-  api: 'http://35.224.103.95:8000/api',
+  api: 'https://api.yvestoupe.com/api',
   auth_method: AuthMethod.NONE,
 };
