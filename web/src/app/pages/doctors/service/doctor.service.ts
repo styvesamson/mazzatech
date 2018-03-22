@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Doctor} from '../interface/doctor.interface';
 import {Observable } from 'rxjs/Observable';
-import {HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {API_BASE} from '../../../app.constants';
 
 @Injectable()
@@ -12,14 +12,6 @@ export class DoctorService  {
 
   doctors: Array<Doctor> = [];
 
-  /**
-   * CHECK CPF
-   * @return {Array}
-   */
-  // Function to check if CPF is taken
-  checkCPF(cpf) {
-    return this.http.post(`${API_BASE}/identity/checkcpf`, cpf);
-  }
 
 
   add(doctor: Doctor): Observable<Doctor> {
@@ -57,8 +49,7 @@ export class DoctorService  {
 
   // Função para editar/atualisar a doctor
   edit(doctor) {
-    const data = JSON.stringify(doctor);
-    return this.http.put(`${API_BASE}/doctor/` + doctor.id , data);
+    return this.http.put(`${API_BASE}/doctor/` + doctor.id , doctor);
   }
 
   // Função para deletar o doctor  pelo seu id
