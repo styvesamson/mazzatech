@@ -25,7 +25,7 @@ class Patient extends Model
 
 
     /**
-     * Get the USer record associated with the patient.
+     * Get the User record associated with the patient.
      */
     public function user()
     {
