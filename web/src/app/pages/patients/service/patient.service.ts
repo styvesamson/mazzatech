@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Patient} from '../interface/patient.interface';
 import {Observable } from 'rxjs/Observable';
-import {HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import {HttpClient, HttpHeaders } from '@angular/common/http';
 import {API_BASE} from '../../../app.constants';
 
 @Injectable()
@@ -57,8 +57,7 @@ export class PatientService  {
 
   // Função para editar/atualisar a patient
   edit(patient) {
-    const data = JSON.stringify(patient);
-    return this.http.put(`${API_BASE}/patient/` + patient.id , data);
+    return this.http.put(`${API_BASE}/patient/` + patient.id , patient);
   }
 
   // Função para deletar o patient  pelo seu id
