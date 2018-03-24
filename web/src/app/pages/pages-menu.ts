@@ -33,11 +33,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Agendamentos do Dia',
-        link: '/pages/agendamentos./list-agendamentos.',
+        link: '/pages/agendamentos/list-agendamentos',
       },
       {
         title: 'Consultas faltas',
-        link: '/pages/agendamentos./list-agendamentos-faltas',
+        link: '/pages/agendamentos/list-agendamentos-faltas',
       },
     ],
   },

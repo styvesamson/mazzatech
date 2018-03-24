@@ -17,6 +17,8 @@ import {Agendamento} from '../interface/agendamento.interface';
 })
 export class ListAgendamentosComponent implements OnInit {
 
+  viewDate: Date = new Date();
+  events = [];
   agendamento;
   username;
   message;
